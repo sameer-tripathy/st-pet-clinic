@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: samee
+Build-Jdk: 11.0.1
+Implementation-Title: pet-clinic-web
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: sameer.springframework
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
+ -starter-parent/st-pet-clinic/pet-clinic-web
+Created-By: Maven Integration for Eclipse
+
