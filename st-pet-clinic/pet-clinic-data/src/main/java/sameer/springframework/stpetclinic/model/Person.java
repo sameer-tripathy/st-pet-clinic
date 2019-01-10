@@ -1,7 +1,8 @@
 package sameer.springframework.stpetclinic.model;
 
-public class Person {
+public class Person extends BaseEntity{
 	
+	private static final long serialVersionUID = 1630138262487638603L;
 	private String firstName;
 	private String lastName;
 	

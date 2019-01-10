@@ -1,6 +1,8 @@
 package sameer.springframework.stpetclinic.model;
 
-public class PetType {
+public class PetType extends BaseEntity{
+	
+	private static final long serialVersionUID = 247102153099365702L;
 	
 	private String name;
 
