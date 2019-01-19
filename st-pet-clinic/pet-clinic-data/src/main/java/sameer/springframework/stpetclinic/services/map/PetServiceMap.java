@@ -3,9 +3,9 @@ package sameer.springframework.stpetclinic.services.map;
 import java.util.Set;
 
 import sameer.springframework.stpetclinic.model.Pet;
-import sameer.springframework.stpetclinic.services.CrudService;
+import sameer.springframework.stpetclinic.services.PetService;
 
-public class PetServiceMap extends AbstractMapService<Pet, Long> implements CrudService<Pet, Long>{
+public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService{
 
 	@Override
 	public Pet save(Pet Pet) {
