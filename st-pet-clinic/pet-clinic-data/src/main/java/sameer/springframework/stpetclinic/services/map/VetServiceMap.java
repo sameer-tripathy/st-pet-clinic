@@ -2,9 +2,12 @@ package sameer.springframework.stpetclinic.services.map;
 
 import java.util.Set;
 
+import org.springframework.stereotype.Service;
+
 import sameer.springframework.stpetclinic.model.Vet;
 import sameer.springframework.stpetclinic.services.VetService;
 
+@Service
 public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService{
 
 	@Override

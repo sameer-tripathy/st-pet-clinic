@@ -2,9 +2,12 @@ package sameer.springframework.stpetclinic.services.map;
 
 import java.util.Set;
 
+import org.springframework.stereotype.Service;
+
 import sameer.springframework.stpetclinic.model.Pet;
 import sameer.springframework.stpetclinic.services.PetService;
 
+@Service
 public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService{
 
 	@Override

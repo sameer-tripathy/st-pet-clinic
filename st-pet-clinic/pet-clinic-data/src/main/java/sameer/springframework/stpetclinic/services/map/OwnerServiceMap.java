@@ -2,9 +2,12 @@ package sameer.springframework.stpetclinic.services.map;
 
 import java.util.Set;
 
+import org.springframework.stereotype.Service;
+
 import sameer.springframework.stpetclinic.model.Owner;
 import sameer.springframework.stpetclinic.services.OwnerService;
 
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService{
 
 	@Override
