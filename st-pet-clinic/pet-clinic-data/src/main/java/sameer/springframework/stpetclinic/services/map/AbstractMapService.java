@@ -1,13 +1,16 @@
 package sameer.springframework.stpetclinic.services.map;
 
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-public abstract class AbstractMapService<T, ID> {
+import sameer.springframework.stpetclinic.model.BaseEntity;
+
+public abstract class AbstractMapService<T extends BaseEntity, ID extends Long> {
 	
-	protected Map<ID, T> map = new HashMap<ID, T>();
+	protected Map<Long, T> map = new HashMap<Long, T>();
 	
 	Set<T> findAll(){
 		return new HashSet<>(map.values());
@@ -17,10 +20,17 @@ public abstract class AbstractMapService<T, ID> {
 		return  map.get(id);
 	}
 	
-	T save(ID id, T object) {
-		map.put(id, object);
+	T save(T object) {
 		
-		return map.get(id);
+		if(object != null) {
+			if(object.getId() == null) {
+				object.setId(getNextId());
+			}
+			map.put(object.getId(), object);
+		}else {
+			throw new IllegalArgumentException("Object can't be NULL");
+		}
+		return object;
 	}
 	
 	void deleteById(ID id) {
@@ -31,6 +41,12 @@ public abstract class AbstractMapService<T, ID> {
 		map.entrySet().removeIf(entry -> entry.getValue().equals(object));		
 	}
 	
-	
-
+	private Long getNextId() {
+		
+		if(map.size() == 0) {
+			return 1L;
+		} else {			
+			return Collections.max(map.keySet()) + 1;			
+		}
+	}
 }
