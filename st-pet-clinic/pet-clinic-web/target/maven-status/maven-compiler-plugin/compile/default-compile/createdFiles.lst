@@ -1,1 +1,5 @@
+sameer\springframework\stpetclinic\controllers\OwnerController.class
+sameer\springframework\stpetclinic\controllers\VetController.class
 sameer\springframework\stpetclinic\StPetClinicApplication.class
+sameer\springframework\stpetclinic\controllers\IndexController.class
+sameer\springframework\stpetclinic\bootstrap\DataLoader.class
