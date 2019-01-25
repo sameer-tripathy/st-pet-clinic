@@ -1,5 +1,14 @@
+sameer\springframework\stpetclinic\services\VetService.class
+sameer\springframework\stpetclinic\services\map\AbstractMapService.class
 sameer\springframework\stpetclinic\model\PetType.class
+sameer\springframework\stpetclinic\services\CrudService.class
 sameer\springframework\stpetclinic\model\Person.class
+sameer\springframework\stpetclinic\services\map\OwnerServiceMap.class
+sameer\springframework\stpetclinic\services\OwnerService.class
+sameer\springframework\stpetclinic\services\PetService.class
 sameer\springframework\stpetclinic\model\Pet.class
+sameer\springframework\stpetclinic\services\map\PetServiceMap.class
+sameer\springframework\stpetclinic\services\map\VetServiceMap.class
 sameer\springframework\stpetclinic\model\Owner.class
 sameer\springframework\stpetclinic\model\Vet.class
+sameer\springframework\stpetclinic\model\BaseEntity.class
