@@ -8,7 +8,7 @@ import sameer.springframework.stpetclinic.model.PetType;
 import sameer.springframework.stpetclinic.services.PetTypeService;
 
 @Service
-public class PetTypeMapService extends AbstractMapService<PetType, Long> implements PetTypeService {
+public class PetTypeServiceMap extends AbstractMapService<PetType, Long> implements PetTypeService {
 
 	@Override
 	public Set<PetType> findAll() {
