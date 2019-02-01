@@ -11,8 +11,8 @@ import sameer.springframework.stpetclinic.services.VetService;
 public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService{
 
 	@Override
-	public Vet save(Vet Vet) {
-		return super.save(Vet);
+	public Vet save(Vet vet) {
+		return super.save(vet);
 	}
 	
 	@Override
